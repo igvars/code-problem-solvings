@@ -1,3 +1,5 @@
+// time: O(n)
+// space: O(n)
 class Node {
   constructor(val, left = null, right = null) {
     this.val = val;
