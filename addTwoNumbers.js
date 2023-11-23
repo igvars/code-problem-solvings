@@ -1,5 +1,5 @@
-// time: O(max(n | m))
-// space: O(n + m + max(n | m))
+// time: O(n)
+// space: O(n)
 
 class Node {
   constructor(val) {
