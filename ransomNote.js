@@ -1,3 +1,5 @@
+// time: O(n) + O(m)
+// space: O(1)
 function ransomNote(magazine, note) {
   const letters = new Map();
   for (let l of magazine) {
