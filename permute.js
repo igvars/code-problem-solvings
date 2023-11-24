@@ -14,7 +14,7 @@ function permute(nums) {
     }
   }
 
-  backtrack(0); // Починаємо з першої позиції
+  backtrack(0);
   return result;
 }
 
