@@ -1,3 +1,12 @@
+/**
+ * Problem: There is grid with zeros and ones. Where zero means ocean and one means land accordantly.
+ * The function should return total islands count. Squares are connected only verticaly or horizontaly.
+ * Complexity:
+ * Time: O(n)
+ * Space: O(n)
+ * @param {number[][]} grid
+ * @return {number}
+ */
 function numIslands(grid) {
   if (!grid || !grid[0]) {
     return 0;
@@ -44,11 +53,17 @@ function numIslands(grid) {
   return totalCount;
 }
 
-const grid = [
-  [1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1],
-  [1, 0, 0, 1, 1],
-  [0, 0, 0, 0, 0],
-];
+class Solution {
+  countIslands() {
+    const grid = [
+      [1, 1, 0, 0, 0],
+      [0, 1, 0, 0, 1],
+      [1, 0, 0, 1, 1],
+      [0, 0, 0, 0, 0],
+    ];
+    console.log(numIslands(grid));
+  }
+}
 
-console.log(numIslands(grid));
+const solution = new Solution();
+solution.countIslands(); // 3
